@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="John Doe">
+            
+             -->
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" placeholder="MM/DD/YYYY">
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <textarea id="careerObjective" placeholder="Write your career objective here"></textarea>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <label for="tenth">10th Standard:</label>
+            <input type="text" id="tenth" placeholder="Board, Year, Percentage">
+            
+            <label for="twelfth">12th Standard:</label>
+            <input type="text" id="twelfth" placeholder="Board, Year, Percentage">
+            
+            <label for="graduation">Graduation:</label>
+            <input type="text" id="graduation" placeholder="Course, University, Year, Percentage">
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <div class="job">
+                <input type="text" class="jobTitle" placeholder="Job Title">
+                <input type="text" class="company" placeholder="Company Name">
+                <input type="text" class="jobDates" placeholder="Dates (e.g., Jan 2021 - Present)">
+                <textarea class="jobDescription" placeholder="Job Description"></textarea>
+            </div>
+
+            <!-- You can use JavaScript to add more job fields dynamically -->
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
+                <input type="text" class="projectTitle" placeholder="Project Title">
+                <input type="text" class="projectDates" placeholder="Dates (e.g., Jan 2021 - Dec 2021)">
+                <textarea class="projectDescription" placeholder="Project Description"></textarea>
+            </div>
+
+            <!-- You can use JavaScript to add more project fields dynamically -->
+        </section>
+
+        <section>
+            <h2>Internships</h2>
+            <div class="internship">
+                <input type="text" class="internshipTitle" placeholder="Internship Title">
+                <input type="text" class="internshipDates" placeholder="Dates (e.g., Jan 2020 - Jun 2020)">
+                <textarea class="internshipDescription" placeholder="Internship Description"></textarea>
+            </div>
+
+            <!-- You can use JavaScript to add more internship fields dynamically -->
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <textarea id="technicalSkills" placeholder="List your technical skills here"></textarea>
+        </section>
+
+        <!-- Add more sections for skills and any other relevant information -->
+
+        <button onclick="printResume()">Print Resume</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
